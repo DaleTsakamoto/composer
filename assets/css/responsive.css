@@ -3,7 +3,7 @@
   #hero-area .contents .head-title {
     font-size: 40px;
   }
-  .skills-item .skills-content h3 a {
+  .publications-item .publications-content h3 a {
     font-size: 14px;
   }
 }
@@ -14,10 +14,10 @@
     font-size: 30px;
     margin-bottom: 30px;
   }
-  .skills-item .skills-content h3 a {
+  .publications-item .publications-content h3 a {
     font-size: 14px;
   }
-  .skills-item {
+  .publications-item {
     margin-bottom: 20px;
   }
 }
@@ -28,10 +28,10 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
-  .skills-item .skills-content h3 a {
+  .publications-item .publications-content h3 a {
     font-size: 16px;
   }
-  .skills-item {
+  .publications-item {
     margin-bottom: 20px;
   }
   .counter-section .counter p {
@@ -60,7 +60,7 @@
   #hero-area .contents p {
     font-size: 20px;
   }
-  .skills-item {
+  .publications-item {
     margin-bottom: 20px;
   }
   .timeline li .line-title {

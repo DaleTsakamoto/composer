@@ -219,6 +219,10 @@ button:focus {
   background: black;
 }
 
+.social-icon li .facebook:hover {
+  background: #316FF6;
+}
+
 .social-icon li .twitter:hover {
   background: grey;
 }
@@ -386,7 +390,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   font-weight: 700;
 }
 
-/* Resume */
+/* Education */
 .timeline {
   position: relative;
 }
@@ -715,8 +719,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  background: url(../img/pexels-fauxels-3184460.jpg) no-repeat;
+  background: url(../img/Piano.jpg);
   background-size: cover;
+  background-position: top
 }
 
 #hero-area {
@@ -930,13 +935,13 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
-/* skills Item */
-.skills {
+/* publications Item */
+.publications {
   background: #F0F0F0;
   margin: 0 auto;
 }
 
-.skills-item {
+.publications-item {
   background: #fff;
   height: 240px;
   width: 280px;
@@ -950,7 +955,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.skills-item .icon i {
+.publications-item .icon i {
   font-size: 42px;
   margin-bottom: 15px;
   text-align: center;
@@ -966,31 +971,43 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   padding: 0 5px;
 }
 
-.skills-item .skills-content h3 {
+.sheet-music-icons{
+  height: 100px;
+  width: 78px;
+  padding: 0 5px;
+}
+
+.leading-tones-icon{
+  height: 70px;
+  width: 180px;
+  padding: 0 5px;
+}
+
+.publications-item .publications-content h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.skills-item .skills-content h3 div {
+.publications-item .publications-content h3 div {
   padding-top: 25px;
   font-size: 18px;
   text-transform: uppercase;
   color: #666;
 }
 
-.skills-item .skills-content h3 a:hover {
+.publications-item .publications-content h3 a:hover {
   color: #00c2bf;
 }
 
-.skills-item .skills-content p {
+.publications-item .publications-content p {
   line-height: 22px;
 }
 
-.skills-item:hover {
+.publications-item:hover {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
-.skills-icons{
+.publications-icons{
   margin: 0 15px;
 }
 

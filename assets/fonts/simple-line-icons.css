@@ -183,11 +183,11 @@
 .icon-paypal,
 .icon-social-tumblr,
 .icon-social-twitter,
-.icon-social-github,
 .icon-social-instagram,
 .icon-social-linkedin,
 .icon-social-pinterest,
 .icon-social-github,
+.icon-social-facebook,
 .icon-social-google,
 .icon-social-reddit,
 .icon-social-skype,
@@ -726,6 +726,9 @@
   content: "\e009";
 }
 .icon-social-github:before {
+  content: "\e00b";
+}
+.icon-social-facebook:before {
   content: "\e00b";
 }
 .icon-social-instagram:before {
