@@ -404,11 +404,11 @@ a.back-to-top:hover, a.back-to-top:focus {
 .timeline li {
   padding: 0 20px 20px 30px;
   list-style: none;
-  border-left: 2px solid #f1f1f1;
+  border-left: 2px solid #fff;
 }
 
 .timeline li .content-text {
-  background: #f2f2f2;
+  background: #fff;
   padding: 20px;
 }
 
@@ -939,12 +939,12 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 /* publications Item */
 .publications {
-  background: #F0F0F0;
+  /* background: #F0F0F0; */
   margin: 0 auto;
 }
 
 .publications-item {
-  background: #fff;
+  background: #F0F0F0;
   height: 240px;
   width: 280px;
   border-radius: 4px;
