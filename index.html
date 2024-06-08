@@ -1,95 +1,9 @@
 <!DOCTYPE html>
 <title>Dale Sakamoto Website</title>
-        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'/>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script> $(document).ready(function(){
-  var cssStyle = { 'margin-top' : - $('.this').size.height / 2 + 'px'	};
-  var imgx = $('thumbnail').length;
-  var x = $('audio').length;
-  var z=0;
-  $('.wrapper > img').attr("src", function() { return $('.thumbnail')[z].src;
-}); 
-  $( ".wrapper" ).wrap($('<div class="slice-content"/>'))
-  .parent()
-  .clone()
-  .appendTo( ".this" )
-  .find( '.wrapper' )
-  .css('margin-top','-111px');
-  $('.slice-content').click(function(){
-    $('.slice-content:nth-child(4)').toggleClass('flip');
-  });
-  
-  $('.play').click(function(){
-    $('audio')[z].play();						
-    $(this).toggleClass('pause');
-    if($(this).hasClass('pause')){
-    $('audio')[z].pause();
-    }
-  });
-  $('.next').click(function(){
-    $('audio')[z].pause();
-    $('.play').removeClass('pause');
-    $('audio')[z].currentTime=0;
-    z++;
-    if(z>=x){z=0}
-    $('.wrapper > img').attr("src", function() { return $('.thumbnail')[z].src;
-});
-    $('audio')[z].play();
-  });
-  $('.previous').click(function(){
-    $('audio')[z].pause();
-    $('.play').removeClass('pause');
-    $('audio')[z].currentTime=0;
-    z--;
-    if(z<0){z=x-1}
-    $('.wrapper > img').attr("src", function() { return $('.thumbnail')[z].src;
-});
-    $('audio')[z].play();
-  });
-  $('audio').bind("ended",function(){
-    z++;
-    if(z>=x){z=0}
-    $('.wrapper > img').attr("src", function() { return $('.thumbnail')[z].src;
-});
-    $('audio')[z].play();
-  });
-  // Like & Share screens fade
-  $('.sharescreen, .blackscreen, .sharetext').hide();
-  $('.share').click(function(){
-    $('.slice-content:nth-child(4)').toggleClass('flip');
-    $('.blackscreen').fadeIn(1000);
-    $('.sharescreen').fadeIn(500);
-    $('.socialicons').addClass('dropdown_2');
-    setTimeout(function(){
-      $('.sharetext').fadeIn(300);
-      $('.facebook2').css('right','130px').css('opacity','1');
-      $('.dribbble').css('left','130px').css('opacity','1');
-      setTimeout(function(){
-        $('.lineone, .linetwo').css('width','19px');
-      },300);
-    },1000);
-  });
-  $('.sharescreen').click(function(){
-    $('.slice-content:nth-child(4)').toggleClass('flip');
-    $('.sharescreen, .blackscreen, .sharetext').fadeOut();
-    $('.socialicons').removeClass('dropdown_2');
-    $('.lineone, .linetwo').css('width','0px');
-    $('.facebook2').css('right','0').css('opacity','0');
-    $('.dribbble').css('left','0').css('opacity','0');
-  });
-
-
-
-  $("ul > li, .share").find('span').hide().end()
-  .hover(function(){
-    $(this).find('span').stop(true, true).fadeIn(200)
-  }, function(){
-    $(this).find('span').stop(true, true).fadeOut(200)
-  });
-
-});
-
-</script>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<script src="/index.js"></script>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -246,7 +160,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/profile_pic.jpg" style="width:50%;margin:26% 0 0 20%" alt="headshot of Dale Sakamoto">
+              <img class="img-fluid" src="assets/img/about/profile_pic.jpg" style="width:80%;margin-top:20%" alt="headshot of Dale Sakamoto">
             </div>
           </div> 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -679,40 +593,31 @@
                       <div class="linetwo"></div>
                     </div>
                     </a>
-                    <a href="http://dribbble.com/RyanBishop" target="_blank">
+                    <a href="" target="_blank">
                     <div class="icon dribbble"></div>
                     </a>
                   </div>
                 </div>
                 <div class="menu">
-                  <div class="share"><span></span> </div>
                   <ul>
-                    <li class="previous" style="padding: 4px 0 0 13px;"><span></span><i class="icon-control-rewind"></i></li>
-                    <li class="play pause" style="padding: 4px 0 0 13px;"><span></span> <i class="icon-control-play"></i></li>
-                    <li class="next" style="padding: 4px 0 0 13px;"><span></span> <i class="icon-control-forward"></i></li>
+                    <li class="previous" style="padding: 4px 0 0 13px;"><span></span></li>
+                    <li class="play pause" style="padding: 4px 0 0 13px;"><span></span></li>
+                    <li class="next" style="padding: 4px 0 0 13px;"><span></span></li>
                   </ul>
                 </div>
               </div>				
             </div>
           </div>
-          <img class="thumbnail randomizer-img" src="/assets/img/background/prague_album.jpg" alt=""/>
+          <img class="thumbnail randomizer-img" src="/assets/img/background/prague_album.jpg" alt="Prague City Album Cover"/>
           <audio >
-             <source src="https://docs.google.com/uc?export=download&id=156mWbv1e-RqglJALP1cSy0ezEpdCbl37" type="audio/mp3"/>
-              <source src="http://k002.kiwi6.com/hotlink/j07888sy9y/grayscale-colorblind_005.ogg" type="audio/ogg"/>
+             <source class="song_source" src="/assets/mp3/ubi_caritas.mp3" type="audio/mp3"/>
                 Your browser does not support HTML5 audio.
           </audio>
-            <img class="thumbnail randomizer-img" src="https://i.imgur.com/6cwiVtD.jpg" alt=""/>		
+            <!-- <img class="thumbnail randomizer-img" src="https://i.imgur.com/6cwiVtD.jpg" alt=""/>		
           <audio >
-             <source src="http://k002.kiwi6.com/hotlink/kvbeuv1q84/grayscale-colorblind_006.mp3" type="audio/mp3"/>
-             <source src="http://k002.kiwi6.com/hotlink/993urfsw1d/grayscale-colorblind_006.ogg" type="audio/ogg"/>
+            <source class="song_source" src="/assets/mp3/ubi_caritas.mp3" type="audio/mp3"/>
                 Your browser does not support HTML5 audio.
-          </audio>
-            <img class="thumbnail randomizer-img" src="https://i.imgur.com/bUIkoni.png" alt=""/>
-          <audio >
-             <source src="http://k002.kiwi6.com/hotlink/837u7mqv4x/grayscale-colorblind_007.mp3" type="audio/mp3"/>
-             <source src="http://k002.kiwi6.com/hotlink/1nf3683kj8/grayscale-colorblind_007.ogg" type="audio/ogg"/>
-                Your browser does not support HTML5 audio.
-          </audio>
+          </audio> -->
         </div>
       </div>
     </section>

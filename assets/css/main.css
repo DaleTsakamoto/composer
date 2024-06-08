@@ -1502,8 +1502,10 @@ padding-top: 25px;
 
  .menu{
  	position: absolute;
+  display: flex;
+  justify-content: center;
  	z-index: 2;
- 	height:52px;
+ 	height: 52px;
  	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1517,12 +1519,11 @@ padding-top: 25px;
  	background-color: #1e1e1e;
  }
  .menu ul{
- 	float: left;
+ 	float: center;
  	box-shadow:
 		inset 0 1px 2px rgba(0,0,0,0.6),
 		0 1px rgba(50,50,50,0.5)
 	;
- 	margin:0 0 0 10px;
  	padding: 0;
  	list-style: none;
  	height:30px;
@@ -1554,29 +1555,29 @@ padding-top: 25px;
  }
  .menu .previous{
  	border-radius:15px 0 0 15px;
- 	background: url(https://i.imgur.com/n2ER0Dd.png) no-repeat center center;
+ 	background: url(/assets/img/gallery/n2ER0Dd.png) no-repeat center center;
  }
  .previous span{ 	
- 	background: url(https://i.imgur.com/vDIdKpi.png) no-repeat center center;
+ 	background: url(/assets/img/gallery/vDIdKpi.png) no-repeat center center;
  }
  .menu .play{
- 	background: url(https://i.imgur.com/dU17ZRl.png) no-repeat center center;
+ 	background: url(/assets/img/gallery/dU17ZRl.png) no-repeat center center;
  }
  .play span{
-	background: url(https://i.imgur.com/hyUlL2r.png) no-repeat center center;
+	background: url(/assets/img/gallery/hyUlL2r.png) no-repeat center center;
  }
  .menu .pause{
- 	background: url(https://i.imgur.com/D1iTyjp.png) no-repeat center center;
+ 	background: url(/assets/img/gallery/D1iTyjp.png) no-repeat center center;
  }
  .pause span{
-	background: url(https://i.imgur.com/dBQOlg1.png) no-repeat center center;
+	background: url(/assets/img/gallery/dBQOlg1.png) no-repeat center center;
  }
-  .menu .next{
-  	border-radius:0 15px 15px 0;
- 	background: url(https://i.imgur.com/d4yYfGs.png) no-repeat center center;
+ .menu .next{
+  border-radius:0 15px 15px 0;
+ 	background: url(/assets/img/gallery/d4yYfGs.png) no-repeat center center;
  }
  .next span{
-	background: url(https://i.imgur.com/JyDNjL9.png) no-repeat center center;
+	background: url(/assets/img/gallery/JyDNjL9.png) no-repeat center center;
  }
  .menu .share,
  .menu .like{
