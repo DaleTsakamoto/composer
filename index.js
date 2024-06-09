@@ -1,4 +1,10 @@
-let songsArray = ["/assets/mp3/ubi_caritas.mp3", "/assets/mp3/sailing_across_emerald_bay.mp3", "/assets/mp3/still_you_call_me.mp3", "/assets/mp3/thunderbird.mp3", "/assets/mp3/aquatic_nocturne.mp3", "/assets/mp3/in_continuum.mp3"];
+let songsArray = ["/assets/mp3/ubi_caritas.mp3",
+  "/assets/mp3/sailing_across_emerald_bay.mp3",
+  "/assets/mp3/still_you_call_me.mp3",
+  "/assets/mp3/thunderbird.mp3",
+  "/assets/mp3/aquatic_nocturne.mp3",
+  "/assets/mp3/in_continuum.mp3",
+  "/assets/mp3/perennial.mp3"];
 
 function getRandomSong() {
   let randomIndex = Math.floor(Math.random() * songsArray.length);
