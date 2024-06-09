@@ -1555,29 +1555,29 @@ padding-top: 25px;
  }
  .menu .previous{
  	border-radius:15px 0 0 15px;
- 	background: url(/assets/img/gallery/n2ER0Dd.png) no-repeat center center;
+ 	background: url(assets/img/gallery/n2ER0Dd.png) no-repeat center center;
  }
  .previous span{ 	
- 	background: url(/assets/img/gallery/vDIdKpi.png) no-repeat center center;
+ 	background: url(assets/img/gallery/vDIdKpi.png) no-repeat center center;
  }
  .menu .play{
- 	background: url(/assets/img/gallery/dU17ZRl.png) no-repeat center center;
+ 	background: url(assets/img/gallery/dU17ZRl.png) no-repeat center center;
  }
  .play span{
-	background: url(/assets/img/gallery/hyUlL2r.png) no-repeat center center;
+	background: url(assets/img/gallery/hyUlL2r.png) no-repeat center center;
  }
  .menu .pause{
- 	background: url(/assets/img/gallery/D1iTyjp.png) no-repeat center center;
+ 	background: url(assets/img/gallery/D1iTyjp.png) no-repeat center center;
  }
  .pause span{
-	background: url(/assets/img/gallery/dBQOlg1.png) no-repeat center center;
+	background: url(assets/img/gallery/dBQOlg1.png) no-repeat center center;
  }
  .menu .next{
   border-radius:0 15px 15px 0;
- 	background: url(/assets/img/gallery/d4yYfGs.png) no-repeat center center;
+ 	background: url(assets/img/gallery/d4yYfGs.png) no-repeat center center;
  }
  .next span{
-	background: url(/assets/img/gallery/JyDNjL9.png) no-repeat center center;
+	background: url(assets/img/gallery/JyDNjL9.png) no-repeat center center;
  }
  .menu .share,
  .menu .like{
